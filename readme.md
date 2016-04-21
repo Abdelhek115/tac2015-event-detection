@@ -5,7 +5,7 @@ We implemented a feed-forward network following the approach of Collobert et al.
 # Requirements 
 * To run the code, you need Python 2.7 as well as Theano (tested on Theano 0.7).
 * For the preprocessing, [http://stanfordnlp.github.io/CoreNLP/index.html](Stanford CoreNLP) is required. Download and unzip Stanford CoreNLP and store the jars in the `corenlp` folder.
-* Levy's word embeddings are required (we used the word embeddings based on Dependency links). Download them from [https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/](Levys) website and unzip them in the `vocab` folder. Make sure `vocab/levy.vocab` exists.
+* Levy's word embeddings are required (we used the word embeddings based on Dependency links). Download them from [https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/](Levys) website and unzip them in the `vocab` folder. Make sure `vocab/deps.words` exists.
 
 # Executing the scripts
 To train your own models, execute `TrainSENNA.py`. Given the config/config.txt file, this script trains a new models based on the train, development, and test files in the tacdata folder.
