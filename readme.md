@@ -1,3 +1,4 @@
+# Event Nugget Extraction
 This repository contains the files for our Event Nugget Detection systems that was submitted to the TAC 2015 shared task on Event Nugget Detection.
 
 We implemented a feed-forward network following the approach of Collobert et al., 'NLP (almost) from scratch' and trained it on the provided data.
