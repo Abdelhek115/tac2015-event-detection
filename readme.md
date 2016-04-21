@@ -4,7 +4,9 @@ This repository contains the files for our Event Nugget Detection systems that w
 We implemented a feed-forward network following the approach of Collobert et al., 'NLP (almost) from scratch' and trained it on the provided data.
 
 Contact Person: [Nils Reimers](https://www.ukp.tu-darmstadt.de/people/doctoral-researchers/nils-reimers/?no_cache=1) 
+
 http://www.ukp.tu-darmstadt.de/
+
 http://www.tu-darmstadt.de/
 
 # Requirements 
