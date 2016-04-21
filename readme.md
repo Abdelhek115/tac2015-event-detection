@@ -9,6 +9,8 @@ http://www.ukp.tu-darmstadt.de/
 
 http://www.tu-darmstadt.de/
 
+> This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
+
 # Requirements 
 * To run the code, you need Python 2.7 as well as Theano (tested on Theano 0.7).
 * For the preprocessing, [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/index.html) is required. Download and unzip Stanford CoreNLP and store the jars in the `corenlp` folder.
