@@ -1,0 +1,33 @@
+Iran	O
+hangs	O
+two	O
+convicted	B-EVENT
+rapists	O
+.	O
+
+Iran	O
+hanged	B-EVENT
+on	O
+Saturday	O
+two	O
+men	O
+convicted	B-EVENT
+of	O
+raping	B-EVENT
+a	O
+woman	O
+in	O
+front	O
+of	O
+her	O
+husband	O
+and	O
+child	O
+,	O
+the	O
+ISNA	O
+news	O
+agency	O
+reported	O
+.	O
+

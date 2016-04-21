@@ -3,6 +3,7 @@ import ConfigParser
 import os
 import gc
 import sys
+import gzip
 
 from IO.FeatureStore import FeatureStore
 from TrainModels.TrainITC import TrainITC
@@ -10,6 +11,10 @@ import theano.tensor as T
 
 
   
+def openFile(filename, mode):
+    if filename.endswith('.gz'):
+        return gzip.open(filename, mode)
+    return open(filename, mode)
     
 def runExperiment(model, configPath, trainDataPath, devDataPath, testDataPath, labelsMapping, epochs=50, validation=None, labelTransform=None):
  
@@ -24,7 +29,7 @@ def runExperiment(model, configPath, trainDataPath, devDataPath, testDataPath, l
     else:
         print "Load all feature names from train file"    
         allFeatureNames = []
-        with open(trainDataPath, 'r') as fIn:
+        with openFile(trainDataPath, 'r') as fIn:
             line = fIn.readline()
             splits = line.split('\t')
             for i in xrange(1, len(splits)):

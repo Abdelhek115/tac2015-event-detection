@@ -7,9 +7,9 @@ from SENNA.ValidationMethods.F1ChunkValidationBIO import F1ChunkValidationBIO
 
 
 
-trainDataPath = "tacdata/train-data.txt"
-devDataPath = "tacdata/dev-data.txt"
-testDataPath = "tacdata/test-data.txt"
+trainDataPath = "tacdata/train-data.txt.gz"
+devDataPath = "tacdata/dev-data.txt.gz"
+testDataPath = "tacdata/test-data.txt.gz"
 
 
 configPath = "config/config.txt"

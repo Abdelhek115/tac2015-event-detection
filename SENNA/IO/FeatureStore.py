@@ -2,7 +2,7 @@
 import os
 import numpy 
 import json
-
+import gzip
 
 from EmbeddingsLookup import EmbeddingsLookup
 from Vocabulary import Vocabulary
@@ -45,6 +45,11 @@ class FeatureStore(object):
         numpy.random.seed(23) #Just random value for seeding
         
       
+      
+    def openFile(self, filename, mode):
+        if filename.endswith('.gz'):
+            return gzip.open(filename, mode)
+        return open(filename, mode)
             
     
     def initVocabs(self): 
@@ -253,7 +258,7 @@ class FeatureStore(object):
         if labelsToExclude == None:
             labelsToExclude = self.labelsToExcludeTrain
         
-        with open(path, 'r') as fIn:
+        with self.openFile(path, 'r') as fIn:
             for line in fIn:
     
                 line = line.strip()
@@ -339,7 +344,7 @@ class FeatureStore(object):
         
         printWarning = False
         #1. Create X and Y matrices
-        with open(filePath, 'r') as fIn:
+        with self.openFile(filePath, 'r') as fIn:
             sentenceLength = 0
             
             for line in fIn:    
