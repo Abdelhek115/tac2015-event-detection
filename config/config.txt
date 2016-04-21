@@ -1,0 +1,57 @@
+[Main]
+experimentName = eventnuggets
+numHidden = 100
+ignoreFeature = DKProTCInstanceID
+outputPath = output
+modelOutputPath = output/models
+
+featureSet = 	Case[-3],Case[-2],Case[-1],Case[0],Case[1],Case[2],Case[3],
+					Token[-3],Token[-2],Token[-1],Token[0],Token[1],Token[2],Token[3],
+#					quote-inside
+#					doctype
+#					dep_nsubj,dep_dobj,
+#					Lemma[-3],Lemma[-2],Lemma[-1],Lemma[0],Lemma[1],Lemma[2],Lemma[3],
+#					prefix2,prefix3,prefix4,prefix5,prefix6,
+#					suffix2,suffix3,suffix4,suffix5,suffix6,
+#					POS[-3],POS[-2],POS[-1],POS[0],POS[1],POS[2],POS[3],	
+#					WordShape[-1],WordShape[0],WordShape[1],
+
+
+
+
+
+
+#folderUpdatedEmbeddings = /home/likewise-open/UKP/reimers/NLP/Experiments/TAC_KBP_2015_EventNugget/updatedEmbeddings
+
+# :: Update of single feature embeddings ::
+updateSingleFeatureEmbeddings = Token[0]	
+#											Lemma[0],
+#											POS[0],
+#											prefix2,prefix3,prefix4,prefix5,prefix6,
+#											suffix2,suffix3,suffix4,suffix5,suffix6,
+#											Token[0],
+
+# :: Update of whole vocabularies ::
+#updateVocabulariesForFeatures = 	prefix2,prefix3,prefix4,prefix5,prefix6,
+#										  	suffix2,suffix3,suffix4,suffix5,suffix6,
+#											Lemma[0],
+#											Token[0],
+
+
+[Default]
+folder = tmp
+size = 5
+minimalCount = 3
+
+[Case]
+path = vocab/Case.vocab
+
+[Token]
+path = vocab/levy_dependency_based.words.sub.vocab
+
+[Lemma]
+path = vocab/levy_dependency_based.words.sub.vocab
+
+
+
+
