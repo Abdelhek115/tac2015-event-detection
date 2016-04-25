@@ -9,7 +9,7 @@ In case you like the work, please cite the following paper:
 [Event Nugget Detection, Classification and Coreference Resolution using Deep Neural Networks and Gradient Boosted Decision Trees](https://www.ukp.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1[pub_id]=TUD-CS-2015-1325)
 
 
-> **Abstract:** For the shared task of event nugget detec-tion at TAC 2015 we trained a deep feed forward network achieving an official F1-score of 65.31% for plain annotations, 55.56% for event mention type and 49.16% for the realis value.
+> **Abstract:** For the shared task of event nugget detection at TAC 2015 we trained a deep feed forward network achieving an official F1-score of 65.31% for plain annotations, 55.56% for event mention type and 49.16% for the realis value.
 For the task of Event Coreference Resolution we prototyped a simple baseline using Gradient Boosted Decision Trees achieving an overall average CoNLL score of 70.02%.
 
 
