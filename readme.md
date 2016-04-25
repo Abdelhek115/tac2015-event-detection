@@ -3,15 +3,6 @@ This repository contains the files for our Event Nugget Detection systems that w
 
 We implemented a feed-forward network following the approach of Collobert et al., 'NLP (almost) from scratch' and trained it on the provided data.
 
-Contact Person: [Nils Reimers](https://www.ukp.tu-darmstadt.de/people/doctoral-researchers/nils-reimers/?no_cache=1) 
-
-http://www.ukp.tu-darmstadt.de/
-
-http://www.tu-darmstadt.de/
-
-> This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
-
-
 
 In case you like the work, please cite the following paper:
 
@@ -40,6 +31,15 @@ Deep Neural Networks and Gradient Boosted Decision Trees},
 	pdf = {fileadmin/user_upload/Group_UKP/publikationen/2015/2015_TAC_Event_Nugget_Detection.pdf},
 }
 ```
+
+Contact Person: [Nils Reimers](https://www.ukp.tu-darmstadt.de/people/doctoral-researchers/nils-reimers/?no_cache=1) 
+
+http://www.ukp.tu-darmstadt.de/
+
+http://www.tu-darmstadt.de/
+
+> This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
+
 
 # Requirements 
 * To run the code, you need Python 2.7 as well as Theano (tested on Theano 0.7).
