@@ -4,23 +4,20 @@ This repository contains the files for our Event Nugget Detection systems that w
 We implemented a feed-forward network following the approach of Collobert et al., 'NLP (almost) from scratch' and trained it on the provided data.
 
 
-In case you like the work, please cite the following paper [ [PDF | BibTeX](https://www.ukp.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1[pub_id]=TUD-CS-2015-1325) ]:
+In case you like the work, please cite the following paper:
 
 ```
-@inproceedings{	TUD-CS-2015325,
+@inproceedings{	reimers-gurevych:2015:TAC,
 	author = {Nils Reimers and Iryna Gurevych},
 	title = {Event Nugget Detection, Classification and Coreference Resolution using
 Deep Neural Networks and Gradient Boosted Decision Trees},
-	month = nov,
+	month = {November},
 	year = {2015},
 	booktitle = {Proceedings of the Eight Text Analysis Conference (TAC 2015) (to appear)},
 	editor = {National Institute of Standards and Technology (NIST)},
-	note = {(to appear)},
 	location = {Gaithersburg, Maryland, USA},
-	pubkey = {TUD-CS-2015-1325},
 	research_area = {Ubiquitous Knowledge Processing},
-	research_sub_area = {UKP_p_DARIAHDE, UKP_not_reviewed},
-	pdf = {fileadmin/user_upload/Group_UKP/publikationen/2015/2015_TAC_Event_Nugget_Detection.pdf},
+	url = {https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/publikationen/2015/2015_TAC_Event_Nugget_Detection.pdf},
 }
 ```
 
