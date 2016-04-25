@@ -11,25 +11,25 @@ http://www.tu-darmstadt.de/
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
 
-# Requirements 
-* To run the code, you need Python 2.7 as well as Theano (tested on Theano 0.7).
-* For the preprocessing, [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/index.html) is required. Download and unzip Stanford CoreNLP and store the jars in the `corenlp` folder.
-* Levy's word embeddings are required (we used the word embeddings based on Dependency links). Download them from [Levys website](https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/) and unzip them in the `vocab` folder. Make sure `vocab/deps.words` exists.
 
-# Executing the scripts
-To train your own models, execute `TrainSENNA.py`. Given the config/config.txt file, this script trains a new models based on the train, development, and test files in the tacdata folder.
-
-To execute the pre-trained model, run the script `RunModel.py`. This file reads in the input.txt files and adds event annotations using a BIO enconding. The output is stored in the output.txt file.
-
-`RunModel.py` requires [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/index.html). The jars must be saved in the _corenlp_ folder.
-
-# License 
-This code is published under GPL version 3 or later. 
 
 In case you like the work, please cite the following paper:
 
 [Event Nugget Detection, Classification and Coreference Resolution using Deep Neural Networks and Gradient Boosted Decision Trees](https://www.ukp.tu-darmstadt.de/publications/details/?no_cache=1&tx_bibtex_pi1[pub_id]=TUD-CS-2015-1325)
 Nils Reimers and Iryna Gurevych In: National Institute of Standards and Technology (NIST): Proceedings of the Eight Text Analysis Conference (TAC 2015), November 2015. 
+
+```
+For the shared task of event nugget detec-tion at TAC 2015 we trained a deep feed for-
+ward network achieving an official F1 -score
+of 65.31% for plain annotations, 55.56% for
+event mention type and 49.16% for the realis
+value.
+For the task of Event Coreference Resolution
+we prototyped a simple baseline using Gradi-
+ent Boosted Decision Trees achieving an over-
+all average CoNLL score of 70.02%.
+```
+
 
 ```
 @inproceedings{	TUD-CS-2015325,
@@ -49,3 +49,18 @@ Deep Neural Networks and Gradient Boosted Decision Trees},
 }
 ```
 
+# Requirements 
+* To run the code, you need Python 2.7 as well as Theano (tested on Theano 0.7).
+* For the preprocessing, [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/index.html) is required. Download and unzip Stanford CoreNLP and store the jars in the `corenlp` folder.
+* Levy's word embeddings are required (we used the word embeddings based on Dependency links). Download them from [Levys website](https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/) and unzip them in the `vocab` folder. Make sure `vocab/deps.words` exists.
+
+# Executing the scripts
+To train your own models, execute `TrainSENNA.py`. Given the config/config.txt file, this script trains a new models based on the train, development, and test files in the tacdata folder.
+
+To execute the pre-trained model, run the script `RunModel.py`. This file reads in the input.txt files and adds event annotations using a BIO enconding. The output is stored in the output.txt file.
+
+`RunModel.py` requires [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/index.html). The jars must be saved in the _corenlp_ folder.
+
+
+# License 
+This code is published under GPL version 3 or later. 
