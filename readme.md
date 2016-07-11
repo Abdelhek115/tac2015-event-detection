@@ -38,7 +38,8 @@ http://www.tu-darmstadt.de/
 # Requirements 
 * To run the code, you need Python 2.7 as well as Theano (tested on Theano 0.7).
 * For the preprocessing, [Stanford CoreNLP](http://stanfordnlp.github.io/CoreNLP/index.html) is required. Download and unzip Stanford CoreNLP and store the jars in the `corenlp` folder.
-* Levy's word embeddings are required (we used the word embeddings based on Dependency links). Download them from [Levys website](https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/) and unzip them in the `vocab` folder. Make sure `vocab/deps.words` exists.
+* Levy's word embeddings are required (we used the word embeddings based on Dependency links). Download them from [Levys website](https://levyomer.wordpress.com/2014/04/25/dependency-based-word-embeddings/) and unzip them in the `vocab` folder. Make sure `vocab/deps.words` exists. 
+* For out of vocabulary tokens, the system uses a special 'UNKNOWN' token. For the word embeddings by Levy, you need to append this word embedding to your deps.words file by executing `cat padding_unknown_300d.txt >> deps.words` in the `vocab` folder.
 
 # Executing the scripts
 To train your own models, execute `TrainSENNA.py`. Given the config/config.txt file, this script trains a new models based on the train, development, and test files in the tacdata folder.
