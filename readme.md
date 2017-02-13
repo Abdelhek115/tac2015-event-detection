@@ -1,5 +1,6 @@
 # Event Nugget Extraction using Deep Neural Networks
-This repository contains the files for our Event Nugget Detection systems that was submitted to the TAC 2015 shared task on Event Nugget Detection.
+This repository contains the files for our Event Nugget Detection systems that was submitted to the TAC 2015 shared task on Event Nugget Detection. It is described in the paper [Event Nugget Detection, Classification and Coreference Resolution using
+Deep Neural Networks and Gradient Boosted Decision Trees](https://www.ukp.tu-darmstadt.de/fileadmin/user_upload/Group_UKP/publikationen/2015/2015_TAC_Event_Nugget_Detection.pdf).
 
 We implemented a feed-forward network following the approach of Collobert et al., 'NLP (almost) from scratch' and trained it on the provided data.
 
